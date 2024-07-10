@@ -22,3 +22,23 @@ input.input-number {
     display: flex;
     justify-content: center;
 }
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.wpcf7-text, .wpcf7-email, .wpcf7-textarea{
+    background-color: white ! Important;
+
+}
+
+.wpcf7-submit{
+    background-color: #e0b9b4! Important;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    display: block;
+    margin: 0 auto;
+ }
