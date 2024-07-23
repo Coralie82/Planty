@@ -22,7 +22,6 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
-
 add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
 function add_extra_item_to_nav_menu( $items, $args ) {
     //if (is_user_logged_in() && $args->menu == "menu-1-aff42bc") {
@@ -30,10 +29,7 @@ function add_extra_item_to_nav_menu( $items, $args ) {
         if (is_user_logged_in() ) {
         
         $items .= '<li><a href="'. get_admin_url() .'">Admin</a></li>';
-       
+       }
+       return $items;
     }
-   // elseif (!is_user_logged_in() && $args->menu == 3) {
-    //    $items .= '<li><a href="' . get_permalink( wc_get_page_id( 'admin_url' ) ) . '">Sign in  /  Register</a></li>';
-  //  }
-    return $items;
-}
+   
