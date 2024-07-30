@@ -10,8 +10,26 @@ Version: 3.5.7.1719321919
 Updated: 2024-06-25 15:25:19
 
 */
-li#menu-item-23 {
-    display: none;
+li#menu-item-22 :hover{
+    transform: scale(1.2);
+}
+
+li#menu-item-21 :hover{
+    transform: scale(1.2);
+}
+
+.commande{
+    background-color: #e0b9b4;
+    color:#FFFFFF! Important;
+}
+
+.commande:hover{
+    background-color: #c02e44; 
+}
+
+.mentions{
+    display:flex;
+    justify-content: center;;
 }
 
 .contact {
@@ -32,10 +50,14 @@ li#menu-item-23 {
 input.wpcf7-form-control.wpcf7-text {
     width: 383px;
     height: 71px;
+    margin-top:5px;
     border-radius: 7px;
     box-shadow: 0px 4px 14px 0px #0000000A;
 }
 
+textarea.wpcf7-form-control.wpcf7-textarea.message {
+    margin-top: 5px;
+}
 input.input-number {
     width: 39px;
     height: 56px;
@@ -50,11 +72,18 @@ input.input-number {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    display:flex;
+    flex-wrap: wrap;
     color: #ffffff! Important;
-    
+    }
+
+.right_form, .left_form{
+    width: 50%;
+  padding: 10px;
+}    
+
+.left_form{
+    border-left: 2px solid #ffffff;
 }
 
 .wpcf7-text, .wpcf7-email, .wpcf7-textarea{
@@ -92,6 +121,3 @@ input.wpcf7-form-control, .wpcf7-submit {
     line-height: 24px;
 }
 
-.commande{
-    background-color: #e0b9b4;
-}
