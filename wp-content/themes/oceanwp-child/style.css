@@ -10,28 +10,34 @@ Version: 3.5.7.1719321919
 Updated: 2024-06-25 15:25:19
 
 */
+/*Menu de navigation*/
 li#menu-item-22 :hover{
     transform: scale(1.2);
 }
 
-li#menu-item-21 :hover{
-    transform: scale(1.2);
+li#menu-item-21 {
+    width: 236px;
+    height: 80px;
+    text-align: center;
 }
 
-.commande{
+.commande a{
     background-color: #e0b9b4;
     color:#FFFFFF! Important;
+
 }
 
-.commande:hover{
+.commande a:hover{
     background-color: #c02e44; 
 }
 
-.mentions{
-    display:flex;
-    justify-content: center;;
+#footer-bottom #footer-bottom-menu {
+    text-align: center;
 }
-
+#footer-bottom #footer-bottom-menu, #footer-bottom #copyright {
+    width: 100%;
+} 
+/*Formulaire de contact*/
 .contact {
     display: grid;
     justify-content: center;
@@ -58,6 +64,7 @@ input.wpcf7-form-control.wpcf7-text {
 textarea.wpcf7-form-control.wpcf7-textarea.message {
     margin-top: 5px;
 }
+/*Bouton "votre commande"*/
 input.input-number {
     width: 39px;
     height: 56px;
@@ -65,7 +72,7 @@ input.input-number {
     justify-content: center;
     text-align: center;
 }
-
+/*Formulaire de commande*/
 .content-input {
     display: flex;
     justify-content: center;
@@ -75,20 +82,36 @@ input.input-number {
     display:flex;
     flex-wrap: wrap;
     color: #ffffff! Important;
+    margin-bottom: 44px;
     }
 
 .right_form, .left_form{
     width: 50%;
-  padding: 10px;
+    height: 410px;
 }    
 
 .left_form{
-    border-left: 2px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    padding-left: 44px;
 }
 
+.content h2 {
+    color: white ! Important;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'syne';
+    font-weight: 700;
+}
+
+ .content label{
+    font-family: 'syne';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+/*Formulaire de contact et formulaire de commande*/
 .wpcf7-text, .wpcf7-email, .wpcf7-textarea{
     background-color: white ! Important;
-
 }
 
 .wpcf7-submit{
@@ -106,18 +129,36 @@ input.wpcf7-form-control, .wpcf7-submit {
     border-radius: 5px;
  }
 
- .content h2 {
-    color: white ! Important;
-    font-size: 30px;
-    line-height: 36px;
-    font-family: 'syne';
-    font-weight: 700;
-}
+@media ( max-width:980px ) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_form{
+        border:none;
+        padding:0;
+    }
+    .content h2{
+        line-height: 30px;
+    }
+ }
 
- .content label{
-    font-family: 'syne';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-}
+@media ( max-width:500px ) {
+    .content{
+        
+        flex-direction: column;
+        align-items: start;
+        margin-left: 10px;
+    }
+    .content h2 {
+       font-size: 25px;
+    }
+    .right_form, .left_form{
+        height:auto;
+    }
+    input.wpcf7-form-control.wpcf7-text {
+        width: 370px;
+    }
 
+ }
+ 
