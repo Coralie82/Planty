@@ -11,8 +11,9 @@ Updated: 2024-06-25 15:25:19
 
 */
 /*Menu de navigation*/
-li#menu-item-22 :hover{
-    transform: scale(1.2);
+li#menu-item-22 :hover {
+   font-size:13px;
+    font-weight:700;
 }
 
 li#menu-item-21 {
@@ -143,6 +144,59 @@ input.wpcf7-form-control, .wpcf7-submit {
     }
  }
 
+ @media ( min-width:2560px) {
+    /*Feuille formulaire*/
+    .elementor-element.elementor-element-b7db353.e-con-full.e-flex.e-con.e-child {
+        background-position: 1006px 524px;
+    }
+     /*Branche1*/
+    .elementor-element.elementor-element-9266c6f.e-con-full.e-flex.e-con.e-child {
+        background-size: 22% auto;
+    }
+     /*Branche2*/
+    .elementor-element.elementor-element-30067a7.e-con-full.elementor-hidden-mobile.e-flex.e-con.e-child {
+        background-size: 22% auto;
+    }
+}
+
+@media (max-width: 1600px) and (min-width: 1440px) {
+    /*Feuille formulaire*/
+    .elementor-element.elementor-element-b7db353.e-con-full.e-flex.e-con.e-child {
+        background-position: 448px 524px; 
+    }
+     /*Branche1*/
+    .elementor-element.elementor-element-9266c6f.e-con-full.e-flex.e-con.e-child {
+        background-size: 39% auto;
+    }
+     /*Branche2*/
+    .elementor-element.elementor-element-30067a7.e-con-full.elementor-hidden-mobile.e-flex.e-con.e-child {
+        background-size: 39% auto;
+    }
+}
+
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+    /*Feuille formulaire*/
+    .elementor-element.elementor-element-b7db353.e-con-full.e-flex.e-con.e-child {
+        background-position: 240px 524px; 
+    }
+    /*Branche1*/
+    .elementor-element.elementor-element-9266c6f.e-con-full.e-flex.e-con.e-child {
+        background-size: 53% auto;
+    }
+    /*Branche2*/
+    .elementor-element.elementor-element-30067a7.e-con-full.elementor-hidden-mobile.e-flex.e-con.e-child {
+        background-size: 53% auto;
+    }
+    .elementor-element.elementor-element-ea50e1b.e-flex.e-con-boxed.e-con.e-parent.e-lazyloaded {
+        margin-top: -680px;
+    }
+/*Titre boisson energisante*/
+    .elementor-11 .elementor-element.elementor-element-10ecaf2 .elementor-heading-title {
+        font-size: 30px;
+    }
+}
+
 @media ( max-width:500px ) {
     .content{
         
@@ -159,6 +213,33 @@ input.wpcf7-form-control, .wpcf7-submit {
     input.wpcf7-form-control.wpcf7-text {
         width: 370px;
     }
-
+    @media (max-width: 425px) and (min-width: 376px) {
+         /*Feuille formulaire*/
+        .elementor-element.elementor-element-b7db353.e-con-full.e-flex.e-con.e-child {
+            background-position: 6px 594px;
+        }
+    }
  }
- 
+
+ @media (max-width: 375px) and (min-width: 321px) {
+    /*Feuille formulaire*/
+    .elementor-element.elementor-element-b7db353.e-con-full.e-flex.e-con.e-child {
+        background-position: 22px 594px; 
+    }
+    .elementor-14 .elementor-element.elementor-element-696f3f5 {
+        font-size: 17px;
+    }
+}
+
+@media ( min-width:320px) and  (max-width:375px) {
+    input.wpcf7-form-control.wpcf7-text{
+        width: 290px;
+    }
+    .content h2 {
+        font-size: 20px;
+     }
+
+    .content label {
+        font-size: 15px;
+        }
+}

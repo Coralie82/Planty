@@ -22,14 +22,22 @@ endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
 // END ENQUEUE PARENT ACTION
+
 add_filter( 'wp_nav_menu_items', 'add_extra_item_to_nav_menu', 10, 2 );
+
 function add_extra_item_to_nav_menu( $items, $args ) {
-    if (is_user_logged_in()) {
-        $items_array = explode('</li>', $items);
+   
+    if ( is_user_logged_in() && 'main_menu' === $args->theme_location ) {
        
-        array_pop($items_array);
+        $items_array = explode('</li>', $items);
+        
+       array_pop($items_array);
+      
         $new_item = '<li><a href="'. get_admin_url() .'">Admin</a>';
-        array_splice($items_array, 1, 0, $new_item);
+        
+       array_splice($items_array, 1, 0, $new_item);
+        
+       
         $items = implode('</li>', $items_array) . '</li>';
     }
     return $items;
